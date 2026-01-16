@@ -2,10 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import get_user_model, login as auth_login
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.models import Permission
-from django.contrib.contenttypes.models import ContentType
 from django.contrib.auth.decorators import login_required, permission_required
-from django.urls import reverse_lazy
-from django.http import HttpResponseRedirect
 from calendar_accounts.forms import UserPermissionsForm
 
 User = get_user_model()
