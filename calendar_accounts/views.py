@@ -36,7 +36,6 @@ class StrictLoginView(LoginView):
     success_view = 'event_list'
     login_attempt_fail_template = 'login_attempt_failed.html'
     
-
     def get_success_url(self) -> str:
         return self.success_view
     
@@ -62,6 +61,7 @@ class StrictLoginView(LoginView):
     def form_valid(self, form):
         user = form.get_user()
         self._check_account_lock(user)
+        # only unlock account here after check lock status
         User.process_success_login_attempt(user)
         auth_login(self.request, user)
         return redirect(self.get_success_url())

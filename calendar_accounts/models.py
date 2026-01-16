@@ -102,7 +102,7 @@ class CalendarUser(AbstractBaseUser, PermissionsMixin):
     @classmethod
     def process_failed_login_attempt(cls, user, **kwargs):
         max_attempts = kwargs.get('max_attempts', MAX_LOGIN_ATTEMPTS)
-        lock_time = 2 if user.is_superuser else kwargs.get('lock_time', LOCKOUT_DEFAULT)
+        lock_time = 3 if user.is_superuser else kwargs.get('lock_time', LOCKOUT_DEFAULT)
         user.failed_login_attempts += 1
         user.save(update_fields=['failed_login_attempts'])
         if user.failed_login_attempts >= max_attempts:
