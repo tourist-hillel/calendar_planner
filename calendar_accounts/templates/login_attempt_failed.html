@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <span>Your account locked due to failed login aatempts</span>
+        <br>
+        <span> Wait until {{ locked_until }} or <a href="{% url 'reset_password' %}">change your password</a></span>
+    </body>
+</html>

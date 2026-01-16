@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            {% if perms.calendar_accounts.can_manage_users %}
+                <button type="submit">Зберегти</button>
+            {% endif %}
+        </form>
+    </body>
+</html>

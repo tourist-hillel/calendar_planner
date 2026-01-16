@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block 'content' %}
+    <form method="get" class="mt-4">
+        <h1>Пошук подій</h1>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                {{ search_form.query.label_tag }}
+                {{ search_form.query }}
+            </div>
+            <div class="col-md-4 mb-3">
+                {{ search_form.category.label_tag }}
+                {{ search_form.category }}
+            </div>
+        </div>
+    </form>
+    <a href="{% url 'create_event' %}" class="btn btn-primary">{% trans 'Створити подію' %}</a>
+    <a href="{% url 'create_event_bulk' %}" class="btn btn-primary">{% trans 'Створити декілька подій' %}</a>
+    <table>
+        <tr>
+            <th>{% trans "Назва події" %}</th>
+            <th>{% trans 'Дата та час початку' %}</th>
+            <th>{% trans 'Дата та час закінчення' %}</th>
+            <th>{% trans 'Категорія' %}</th>
+            <th>{% trans 'Користувач' %}</th>
+            <th>{% trans 'Створено' %}</th>
+            <th>{% trans 'Дії' %}</th>
+        </tr>
+        {% for event in events %}
+            <tr>
+                <td>{{ event.title }}</td>
+                <td>{{ event.start_time }}</td>
+                <td>{{ event.end_time }}</td>
+                <td>{{ event.category }}</td>
+                <td>{{ event.user }}</td>
+                <td>{{ event.created_at }}</td>
+                <td>
+                    {% if perms.events.can_edit_all_events %}
+                        <a href="{% url 'edit_event_cbv' event.id %}">{% trans 'Редагувати' %}</a>
+                    {% endif %}
+                    <a href="#">Видалити</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

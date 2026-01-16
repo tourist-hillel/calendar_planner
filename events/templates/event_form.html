@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>{% if form.instance.pk %} Редагування події {% else %} Створення події {% endif %}</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Зберегти</button>
+        </form>
+        <a href="{% url 'event_list' %}">До списку подій</a>
+    </body>
+</html>

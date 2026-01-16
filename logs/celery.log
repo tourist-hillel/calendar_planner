@@ -1,0 +1,176 @@
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140218358111104 
+def backend_cleanup():
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140218358111104 
+def events_report():
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140218358111104 
+def chain(*args, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140218358111104 
+def log_new_event(event_id):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140218358111104 
+def xstarmap(task, it):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140218358111104 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140218358111104 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140218358111104 
+def chunks(task, it, n):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140218358111104 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140218358111104 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140218358111104 
+def xmap(task, it):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140232020315008 
+def backend_cleanup():
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140232020315008 
+def chain(*args, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140232020315008 
+def xstarmap(task, it):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140232020315008 
+def events_report():
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140232020315008 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140232020315008 
+def log_new_event(event_id):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140232020315008 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140232020315008 
+def chunks(task, it, n):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140232020315008 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140232020315008 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:29 celery.utils.functional functional 1 140232020315008 
+def xmap(task, it):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:56 celery.utils.functional functional 17 139731671606976 
+def chunks(task, it, n):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:56 celery.utils.functional functional 17 139731671606976 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:56 celery.utils.functional functional 17 139731671606976 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:56 celery.utils.functional functional 17 139731671606976 
+def xmap(task, it):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:56 celery.utils.functional functional 17 139731671606976 
+def backend_cleanup():
+    return 1
+
+[DEBUG] 2026-01-06 19:05:56 celery.utils.functional functional 17 139731671606976 
+def events_report():
+    return 1
+
+[DEBUG] 2026-01-06 19:05:56 celery.utils.functional functional 17 139731671606976 
+def log_new_event(event_id):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:56 celery.utils.functional functional 17 139731671606976 
+def chain(*args, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:56 celery.utils.functional functional 17 139731671606976 
+def xstarmap(task, it):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:56 celery.utils.functional functional 17 139731671606976 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:05:56 celery.utils.functional functional 17 139731671606976 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:07:14 celery.utils.functional functional 21 140193179096768 
+def chunks(task, it, n):
+    return 1
+
+[DEBUG] 2026-01-06 19:07:14 celery.utils.functional functional 21 140193179096768 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:07:14 celery.utils.functional functional 21 140193179096768 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[DEBUG] 2026-01-06 19:07:14 celery.utils.functional functional 21 140193179096768 
+def xmap(task, it):
+    return 1
+
+[DEBUG] 2026-01-06 19:07:14 celery.utils.functional functional 21 140193179096768 
+def backend_cleanup():
+    return 1
+
+[DEBUG] 2026-01-06 19:07:14 celery.utils.functional functional 21 140193179096768 
+def events_report():
+    return 1
+
+[DEBUG] 2026-01-06 19:07:14 celery.utils.functional functional 21 140193179096768 
+def chain(*args, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:07:14 celery.utils.functional functional 21 140193179096768 
+def xstarmap(task, it):
+    return 1
+
+[DEBUG] 2026-01-06 19:07:14 celery.utils.functional functional 21 140193179096768 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[DEBUG] 2026-01-06 19:07:14 celery.utils.functional functional 21 140193179096768 
+def log_new_event(event_id):
+    return 1
+
+[DEBUG] 2026-01-06 19:07:14 celery.utils.functional functional 21 140193179096768 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+

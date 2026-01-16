@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <table>
+            <tr>
+                <th>Назва</th>
+                <th>Дата та час початку</th>
+                <th>Дата та час закінчення</th>
+                <th>Категорія</th>
+                <th>Користувач</th>
+                <th>Створено</th>
+                <th>Дії</th>
+            </tr>
+            {% for event in events %}
+                <tr>
+                    <td>{{ event.title }}</td>
+                    <td>{{ event.start_time }}</td>
+                    <td>{{ event.end_time }}</td>
+                    <td>{{ event.category }}</td>
+                    <td>{{ event.user }}</td>
+                    <td>{{ event.created_at }}</td>
+                    <td>
+                        <a href="#">Редагувати</a>
+                        <a href="#">Видалити</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
