@@ -7,6 +7,7 @@ from calendar_accounts.forms import UserPermissionsForm
 
 User = get_user_model()
 
+
 @login_required
 @permission_required('calendar_accounts.can_see_user_permissions', raise_exception=True)
 def manage_permissions(request, user_id):
@@ -32,10 +33,10 @@ class StrictLoginView(LoginView):
     template_name = 'login.html'
     success_view = 'event_list'
     login_attempt_fail_template = 'login_attempt_failed.html'
-    
+
     def get_success_url(self) -> str:
         return self.success_view
-    
+
     def _check_account_lock(self, user):
         if user.is_account_locked:
             return render(
@@ -43,18 +44,18 @@ class StrictLoginView(LoginView):
                 self.login_attempt_fail_template,
                 {'locked_until': user.account_locked_until}
             )
-    
+
     def form_invalid(self, form):
         try:
             user = User.objects.get(cell_phone=form.cleaned_data['username'])
             User.process_failed_login_attempt(user)
             user.refresh_from_db()
-            self._check_account_lock(user)  
+            self._check_account_lock(user)
         except User.DoesNotExist:
             pass
         form.add_error(None, 'Невірний номер телефону або пароль!')
         return super().form_invalid(form)
-    
+
     def form_valid(self, form):
         user = form.get_user()
         self._check_account_lock(user)
@@ -62,6 +63,3 @@ class StrictLoginView(LoginView):
         User.process_success_login_attempt(user)
         auth_login(self.request, user)
         return redirect(self.get_success_url())
-    
-
-

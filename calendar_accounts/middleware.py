@@ -1,7 +1,6 @@
 from typing import Any
 import logging
 from django.shortcuts import redirect
-from django.urls import reverse
 from calendar_accounts.validators import ExpirationWarningValidator
 
 
