@@ -63,7 +63,7 @@ jobs:
                 POSTGRES_DB: testdb
                 POSTGRES_USER: postgres
                 POSTGRES_PWD: password
-                POSTGRES_HOST: postgres
+                POSTGRES_HOST: localhost
                 POSTGRES_PORT: 5432
                 
             
