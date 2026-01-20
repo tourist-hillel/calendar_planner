@@ -49,12 +49,12 @@ jobs:
                 pip install -r requirements.txt
             
             - name: Run migrations
-              run: python calendar_planner/manage.py migrate
+              run: python manage.py migrate
               env:
                 DJANGO_SETTINGS_MODULE: calendar_planner.settings
             
             - name: Run tests
-              run: python calendar_planner/manage.py test calendar_api
+              run: python manage.py test calendar_api
               env:
                 DJANGO_SETTINGS_MODULE: calendar_planner.settings
                 REDIS_HOST: redis
