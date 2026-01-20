@@ -34,7 +34,7 @@ jobs:
                 image: redis:latest
                 ports:
                     - 6379:6379
-            db:
+            postgres:
               image: postgres:16-alpine
               ports:
                     - 5432:5432
@@ -63,7 +63,7 @@ jobs:
                 POSTGRES_DB: testdb
                 POSTGRES_USER: postgres
                 POSTGRES_PWD: password
-                POSTGRES_HOST: db
+                POSTGRES_HOST: postgres
                 POSTGRES_PORT: 5432
                 
             
