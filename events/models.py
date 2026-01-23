@@ -17,6 +17,7 @@ class Event(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_('Користувач'))
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, verbose_name=_('Категорія'))
     is_completed = models.BooleanField(default=False, verbose_name=_('Виконано'))
+    short_description = models.CharField(max_length=140, blank=True, verbose_name=_('Короткий опис'))
 
     def __str__(self) -> str:
         return f'{self.title} - created: {self.created_at}'
