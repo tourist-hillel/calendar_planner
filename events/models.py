@@ -19,6 +19,7 @@ class Event(models.Model):
     is_completed = models.BooleanField(default=False, verbose_name=_('Виконано'))
     short_description = models.CharField(max_length=140, blank=True, verbose_name=_('Короткий опис'))
     event_category = models.ForeignKey('events.Category', on_delete=models.SET_NULL, null=True)
+    short_description = models.CharField(max_length=140, blank=True, verbose_name=_('Короткий опис'))
 
     def __str__(self) -> str:
         return f'{self.title} - created: {self.created_at}'
