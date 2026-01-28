@@ -45,7 +45,7 @@ pluggy==1.6.0
 prometheus_client==0.23.1
 prompt_toolkit==3.0.52
 psycopg-binary==3.2.12
-psycopg2==2.9.11
+psycopg2-binary==2.9.11
 Pygments==2.19.2
 PyJWT==2.10.1
 pytest==9.0.1
